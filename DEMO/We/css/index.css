@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@layer utilities {
+      .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .heart-beat {
+        animation: heartbeat 1.5s ease-in-out infinite;
+      }
+      .photo-hover {
+        transition: all 0.4s ease;
+      }
+      .photo-hover:hover {
+        transform: scale(1.05) rotate(2deg);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .fade-in {
+        animation: fadeIn 1.5s ease forwards;
+        opacity: 0;
+      }
+      .slide-up {
+        animation: slideUp 1s ease forwards;
+        opacity: 0;
+      }
+    }
+    
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      14% { transform: scale(1.1); }
+      28% { transform: scale(1); }
+      42% { transform: scale(1.1); }
+      70% { transform: scale(1); }
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    @keyframes slideUp {
+      from { 
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to { 
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
