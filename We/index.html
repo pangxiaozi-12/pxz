@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special moment</title>
+  <!-- 引入页签图标 -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- 引入Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 引入Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- 引入Google字体 -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <!-- Tailwind配置 -->
+  <script src="./js/main.js"></script>
+
+</head>
+
+<body>
+  <!-- 导航栏
+  <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent">
+    <div class="container mx-auto px-4 py-3 flex justify-center">
+      <ul class="flex space-x-6 text-white">
+        <li><a href=" " class="hover:text-love-pink transition-colors">首页</a ></li>
+        <li><a href="#memories" class="hover:text-love-pink transition-colors">回忆</a ></li>
+        <li><a href="#timeline" class="hover:text-love-pink transition-colors">时光</a ></li>
+        <li><a href="#proposal" class="hover:text-love-pink transition-colors">告白</a ></li>
+        <li><a href="#suprise" class="hover:text-love-pink transition-colors">彩蛋</a ></li>
+      </ul>
+    </div>
+  </nav> -->
+
+
+  <!-- 背景图片区域 -->
+  <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden">
+    <!-- 背景图片 -->
+    <div class="absolute inset-0 z-0">
+      <img src="images/背景.jpg" alt="浪漫背景" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+    
+    <!-- 内容 -->
+    <div class="container mx-auto px-4 z-10 text-center">
+      <h1 class="font-dancing text-[clamp(2.5rem,8vw,5rem)] text-white text-shadow mb-6 fade-in" style="animation-delay: 0.3s">
+        Because of you 
+      </h1>
+      <p class="text-[clamp(1rem,3vw,1.5rem)] text-white text-shadow max-w-2xl mx-auto mb-10 fade-in" style="animation-delay: 0.6s">
+        只要尼罗河还在流动，太阳仍在闪耀，我对你的爱就不会消逝
+      </p >
+      <a href="#memories" class="inline-block fade-in" style="animation-delay: 0.9s">
+        <i class="fa fa-angle-down text-white text-4xl animate-bounce"></i>
+      </a >
+    </div>
+  </section>
+
+  <!-- 照片回忆墙 -->
+  <section id="memories" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="font-dancing text-[clamp(2rem,5vw,3.5rem)] text-love-deep text-center mb-16 slide-up">
+        我们俩
+      </h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- 照片1 -->
+        <div class="rounded-lg overflow-hidden shadow-lg photo-hover slide-up" style="animation-delay: 0.2s">
+          <img src="./images/1.jpg" alt="我们的照片" class="w-full h-64 object-cover">
+          <div class="p-4 bg-love-light">
+            <p class="text-center font-dancing text-xl">ありがとう</p >
+          </div>
+        </div>
+        
+        <!-- 照片2 -->
+        <div class="rounded-lg overflow-hidden shadow-lg photo-hover slide-up" style="animation-delay: 0.4s">
+          <img src="./images/2.jpg" alt="我们的照片" class="w-full h-64 object-cover">
+          <div class="p-4 bg-love-light">
+            <p class="text-center font-dancing text-xl">私の</p >
+          </div>
+        </div>
+        
+        <!-- 照片3 -->
+        <div class="rounded-lg overflow-hidden shadow-lg photo-hover slide-up" style="animation-delay: 0.6s">
+          <img src="./images/3.jpg" alt="我们的照片" class="w-full h-64 object-cover">
+          <div class="p-4 bg-love-light">
+            <p class="text-center font-dancing text-xl">暗い</p >
+          </div>
+        </div>
+        
+        <!-- 照片4 -->
+        <div class="rounded-lg overflow-hidden shadow-lg photo-hover slide-up" style="animation-delay: 0.8s">
+          <img src="./images/4.jpg" alt="我们的照片" class="w-full h-64 object-cover">
+          <div class="p-4 bg-love-light">
+            <p class="text-center font-dancing text-xl">世界の</p >
+          </div>
+        </div>
+        
+        <!-- 照片5 -->
+        <div class="rounded-lg overflow-hidden shadow-lg photo-hover slide-up" style="animation-delay: 1s">
+          <img src="./images/5.jpg" alt="我们的照片" class="w-full h-64 object-cover">
+          <div class="p-4 bg-love-light">
+            <p class="text-center font-dancing text-xl">小さな</p >
+          </div>
+        </div>
+        
+        <!-- 照片6 -->
+        <div class="rounded-lg overflow-hidden shadow-lg photo-hover slide-up" style="animation-delay: 1.2s">
+          <img src="./images/夕阳.jpg" alt="我们的照片" class="w-full h-64 object-cover">
+          <div class="p-4 bg-love-light">
+            <p class="text-center font-dancing text-xl">太陽</p >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 爱情时间线 -->
+  <section id="timeline" class="py-20 bg-love-light">
+    <div class="container mx-auto px-4">
+      <h2 class="font-dancing text-[clamp(2rem,5vw,3.5rem)] text-love-deep text-center mb-16 slide-up">
+        我们的爱情旅程
+      </h2>
+      
+      <div class="relative max-w-4xl mx-auto">
+        <!-- 时间线中轴线 -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-love-pink rounded-full"></div>
+        
+        <!-- 时间点1 -->
+        <div class="relative mb-16 slide-up" style="animation-delay: 0.2s">
+          <div class="absolute left-1/2 transform -translate-x-1/2 -top-3 w-6 h-6 bg-love-deep rounded-full z-10 heart-beat"></div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="md:text-right order-2 md:order-1">
+              <h3 class="font-dancing text-2xl text-love-deep mb-2">第一次相遇</h3>
+              <p class="text-gray-700">那是一个格外寒冷的夜晚，因为你出现，为我的世界驱除阴冷，从此我的生活变得四季如春。</p >
+              <p class="text-sm text-gray-500 mt-1">2022年4月22日</p >
+            </div>
+            <div class="hidden md:block order-2">
+              <div class="w-48 h-48 rounded-full overflow-hidden shadow-lg ml-auto">
+                <img src="./images/凳子.jpg" alt="相遇" class="w-full h-full object-cover">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 时间点2 -->
+        <div class="relative mb-16 slide-up" style="animation-delay: 0.4s">
+          <div class="absolute left-1/2 transform -translate-x-1/2 -top-3 w-6 h-6 bg-love-deep rounded-full z-10 heart-beat"></div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="hidden md:block">
+              <div class="w-48 h-48 rounded-full overflow-hidden shadow-lg">
+                <img src="./images/冬天.jpg" alt="热烈的冬季" class="w-full h-full object-cover">
+              </div>
+            </div>
+            <div>
+              <h3 class="font-dancing text-2xl text-love-deep mb-2">热烈的冬季</h3>
+              <p class="text-gray-700">它朝若是同林雪，此生也算共白头。在橡树面前，我认为我们可以相守百年。</p >
+              <p class="text-sm text-gray-500 mt-1">2023年1月3日</p >
+            </div>
+          </div>
+        </div>
+        
+        <!-- 时间点3 -->
+        <div class="relative mb-16 slide-up" style="animation-delay: 0.6s">
+          <div class="absolute left-1/2 transform -translate-x-1/2 -top-3 w-6 h-6 bg-love-deep rounded-full z-10 heart-beat"></div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="md:text-right order-2 md:order-1">
+              <h3 class="font-dancing text-2xl text-love-deep mb-2">一起坐火车</h3>
+              <p class="text-gray-700">在没有物质的条件下，我们可以一起做火车一块奔波，有你在身边我永远都不会感到累，一路上的风景格外美丽。</p >
+              <p class="text-sm text-gray-500 mt-1">2023年3月12日</p >
+            </div>
+            <div class="hidden md:block order-2">
+              <div class="w-48 h-48 rounded-full overflow-hidden shadow-lg ml-auto">
+                <img src="./images/火车.jpg" alt="一起坐火车" class="w-full h-full object-cover">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 时间点4 -->
+        <div class="relative slide-up" style="animation-delay: 0.8s">
+          <div class="absolute left-1/2 transform -translate-x-1/2 -top-3 w-6 h-6 bg-love-deep rounded-full z-10 heart-beat"></div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="hidden md:block">
+              <div class="w-48 h-48 rounded-full overflow-hidden shadow-lg">
+                <img src="./images/俄罗斯.jpg" alt="求婚时刻" class="w-full h-full object-cover">
+              </div>
+            </div>
+            <div>
+              <h3 class="font-dancing text-2xl text-love-deep mb-2">俄罗斯的冬</h3>
+              <p class="text-gray-700">你在俄罗斯过得好吗，那里的冬天会不会冷，这次分别可能会持续两年之久，我很想你。</p >
+              <p class="text-sm text-gray-500 mt-1">2024年11月21日</p >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 求婚告白区 -->
+  <section id="proposal" class="py-20 bg-white relative overflow-hidden">
+    <!-- 装饰元素 -->
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+      <i class="fa fa-heart text-love-pink/20 absolute top-10 left-10 text-6xl"></i>
+      <i class="fa fa-heart text-love-pink/20 absolute top-40 right-20 text-4xl"></i>
+      <i class="fa fa-heart text-love-pink/20 absolute bottom-20 left-20 text-5xl"></i>
+      <i class="fa fa-heart text-love-pink/20 absolute bottom-40 right-40 text-3xl"></i>
+    </div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-3xl mx-auto bg-love-light rounded-2xl p-8 md:p-12 shadow-xl slide-up">
+        <h2 class="font-dancing text-[clamp(2rem,5vw,3.5rem)] text-love-deep text-center mb-8">
+          致我最爱的人
+        </h2>
+        
+        <div class="text-gray-700 space-y-4 mb-10">
+          <p>亲爱的，</p >
+          <p>认识你以来，我的生活充满了色彩和欢笑。你教会我什么是爱，什么是被爱。你的笑容是我每天醒来的动力，你的拥抱是我最温暖的港湾。</p >
+          <p>我们一起经历了喜怒哀乐，一起成长，一起规划未来。每一个和你在一起的瞬间，都成为了我生命中最珍贵的回忆。</p >
+          <p>这个网页我从出国之后就开始写，在家里写过，在教室里写过，在咖啡馆里写过，每次当我打开它时，我都对未来充满了无限幻想。</p>
+          <p>我记得有一次我在写网页时，有一对日本的暮年夫妻就坐在我旁边，不难看出他们在一起非常恩爱，那一刻我想到了和你老了之后的样子，等我们变老了之后，
+            我还会像现在一样的爱你，那个时候在别人眼里你已经变成了一个老太婆，他们没见过你年轻时的样子，可是在我眼里你还是如我刚见到的你一样可爱美丽。
+          </p>
+          <p>今天，我想正式向你求婚。我希望未来的每一天都能有你陪伴，想和你一起看遍世间风景，想和你一起慢慢变老。</p >
+          <p class="font-dancing text-2xl text-right mt-6">永远爱你的人</p >
+        </div>
+        
+        <div class="text-center">
+          <h3 class="text-2xl md:text-3xl font-bold mb-8 text-love-deep">你愿意嫁给我吗？</h3>
+          
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <button id="yesBtn" class="px-8 py-3 bg-love-deep text-white rounded-full text-lg font-semibold hover:bg-love-accent transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-transform">
+            我愿意
+            </button>
+        <button id="noBtn" class="px-8 py-3 bg-gray-300 text-gray-700 rounded-full text-lg font-semibold hover:bg-gray-400 transition-colors shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-transform">
+              再考虑一下
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 成功求婚弹窗 (默认隐藏) -->
+  <div id="successModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="bg-white rounded-2xl p-8 max-w-lg w-full mx-4 text-center transform scale-95 transition-transform duration-300">
+      <div class="text-love-deep text-6xl mb-4">
+        <i class="fa fa-heart heart-beat"></i>
+      </div>
+      <h2 class="font-dancing text-4xl text-love-deep mb-4">我爱你！</h2>
+      <p class="text-gray-700 mb-6">在我心里，早已经把你娶了千百次！</p >
+      <img src="./images/烟花.jpeg" alt="庆祝" class="w-full h-48 object-cover rounded-lg mb-6">
+      <!-- 再点击永远在一起后，可以弹出回忆视频 -->
+      <button id="closeModal" class="px-6 py-2 bg-love-deep text-white rounded-full hover:bg-love-accent transition-colors">
+      <a href="./sky-lantern/index.html">永远在一起</a>
+  
+      </button>
+    </div>
+  </div>
+
+  <!-- 页脚 -->
+  <footer class="py-6 bg-love-deep text-white text-center">
+    <p>用我全部的爱 &copy; 2025</p >
+  </footer>
+
+  <script>
+    // 导航栏滚动效果
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('bg-black/70', 'py-2', 'shadow-md');
+        navbar.classList.remove('bg-transparent', 'py-3');
+      } else {
+        navbar.classList.add('bg-transparent', 'py-3');
+        navbar.classList.remove('bg-black/70', 'py-2', 'shadow-md');
+      }
+    });
+    
+    // 平滑滚动
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        window.scrollTo({
+          top: targetElement.offsetTop - 70,
+          behavior: 'smooth'
+        });
+      });
+    });
+    
+    // 求婚按钮交互
+    const yesBtn = document.getElementById('yesBtn');
+    const noBtn = document.getElementById('noBtn');
+    const successModal = document.getElementById('successModal');
+    const closeModal = document.getElementById('closeModal');
+    
+    // "再考虑一下"按钮会调皮地移动
+    noBtn.addEventListener('mouseover', () => {
+      const maxX = window.innerWidth - 150;
+      const maxY = window.innerHeight - 100;
+      
+      const randomX = Math.floor(Math.random() * maxX);
+      const randomY = Math.floor(Math.random() * maxY);
+      
+      noBtn.style.position = 'absolute';
+      noBtn.style.left = `${randomX}px`;
+      noBtn.style.top = `${randomY}px`;
+    });
+    
+    // 点击"我愿意"显示弹窗
+    yesBtn.addEventListener('click', () => {
+      successModal.classList.remove('opacity-0', 'pointer-events-none');
+      successModal.querySelector('div').classList.remove('scale-95');
+      successModal.querySelector('div').classList.add('scale-100');
+      
+      // 播放背景音乐（如果有）
+      // const audio = new Audio('your-music.mp3');
+      // audio.play();
+    });
+    
+    // 关闭弹窗
+    closeModal.addEventListener('click', () => {
+      successModal.classList.add('opacity-0', 'pointer-events-none');
+      successModal.querySelector('div').classList.remove('scale-100');
+      successModal.querySelector('div').classList.add('scale-95');
+    });
+    
+    // 滚动动画
+    const observerOptions = {
+      threshold: 0.1
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('slide-up');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    document.querySelectorAll('section > div > div:not(.slide-up)').forEach(el => {
+      observer.observe(el);
+    });
+
+  </script>
+</body>
+</html>
